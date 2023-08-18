@@ -1,7 +1,6 @@
 # Dashboard Screensaver
 
 Dashboard Screensaver is an app that allows you to configure any web page - a dashboard, Home Assistant, Dakboard, or your favourite youtube video - as the screen saver for your Android TV. 
-
 https://play.google.com/store/apps/details?id=chyzinr.webpagescreensaver
 
 # Usage Instructions
@@ -20,8 +19,10 @@ Install ADB Tools on a PC. There's a few different tools that will allow you to 
 Alternative: Install ['Remote ADB Shell'](https://play.google.com/store/apps/details?id=com.cgutman.androidremotedebugger&hl=en_CA&gl=US) on an android phone. 
 
 ## 3. Change the screensaver using ADB commands
-Enter `adb shell`
-Enter ``settings put secure screensaver_components chyzinr.webpagescreensaver/.Screensaver``
+- Open the ADB Tool [downloaded in step 2]
+- Establish a connection to the chromecast device. Enter `adb connect <the IP address noted in step 1>`
+- Start adb shell. Enter `adb shell`
+- Enter ``settings put secure screensaver_components chyzinr.webpagescreensaver/.Screensaver``
 
 ## 4. Done!
 When your screensaver kicks in, it should now start the website that you've configured.
